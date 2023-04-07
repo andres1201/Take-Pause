@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace; 
+    background-color:  #EE5007;
+    height: 100vh;
+    }
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: -37px;
+}
+
+.ex{
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.ex:hover{
+    color: #EE5007;
+    font-weight: bolder;
+}
+
+.formulario{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e84200;
+}
+
+.formulario form{
+    padding:  0 40px ;
+    box-sizing: border-box;
+    
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.username input{
+   width: 100%;
+   padding: 0 5px;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+   color: white;
+}
+
+.username input:focus{
+    color: black;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+
+ }
+ 
+ .username span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6c3483;
+    transition: .5s;
+ }
+ .username input:focus ~ label,
+ .username input:focus ~ label{
+    top: -5px;
+    color: #6c3483;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: rgb(224, 103, 28);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.recordar:hover{
+   text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #ca6023;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    
+}
+ input[type="submit"]{
+    border-color: rgba(116, 39, 168, 0.753);
+    transition: .5s;
+ }
+
+ .registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .registrarse a{
+    color: rgb(29, 0, 193);
+    text-decoration: none;
+ }
+ .registrarse a:hover{
+    text-decoration: underline;
+ }

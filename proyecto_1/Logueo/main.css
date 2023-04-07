@@ -1,0 +1,317 @@
+body{
+    background: linear-gradient( #838181, #3c3c3c);
+    padding-bottom: 150px;
+}
+
+#x a{
+    display: flex;
+    justify-content: end;
+    color: #EE5007;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover{
+    color: #EE5007;
+    font-weight: bolder;
+}
+
+.bg {
+    position: relative;
+    background-image: url(./img2/BG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#cabeza{
+background-color: #EE5007;
+}
+
+#nara{
+    background-color: #EE5007;
+    color: #fff;
+}
+h2{
+    margin-top: -90px;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #000;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+/* Nombre */
+.form .lbl-nombre{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-nombre:after{
+    content: '';
+   
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-nomb{
+   
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-nombre .text-nomb, .form input:valid + .lbl-nombre .text-nomb
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after
+{
+    transform: translateX(0%);
+}
+
+/* Apellido */
+
+.form .lbl-apellido{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-apellido:after{
+    content: '';
+    
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-ape{
+    
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-apellido .text-ape, .form input:valid + .lbl-apellido .text-ape
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-apellido:after, .form input:valid + .lbl-apellido:after
+{
+    transform: translateX(0%);
+}
+
+/*Correo */
+
+.form .lbl-correo{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-correo:after{
+    content: '';
+  
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-co{
+ 
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-correo .text-co, .form input:valid + .lbl-correo .text-co
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-correo:after, .form input:valid + .lbl-correo:after
+{
+    transform: translateX(0%);
+}
+
+/*Contraseña */
+
+.form .lbl-contraseña{
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-contraseña:after{
+    content: '';
+    
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-contra{
+    
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-contraseña .text-contra, .form input:valid + .lbl-contraseña .text-contra
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-contraseña:after, .form input:valid + .lbl-contraseña:after
+{
+    transform: translateX(0%);
+}
+
+/*Confirmar contraseña */
+
+.form .lbl-ccontraseña{
+  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-ccontraseña:after{
+    content: '';
+    
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-ccontra{
+   
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-ccontraseña .text-ccontra, .form input:valid + .lbl-ccontraseña .text-ccontra
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-ccontraseña:after, .form input:valid + .lbl-ccontraseña:after
+{
+    transform: translateX(0%);
+}
+
+/*Numero de telefono */
+
+.form .lbl-numero{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.form .lbl-numero:after{
+    content: '';
+    
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3seg ease;
+}
+
+.text-num{
+    
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3seg ease;
+    color: #000;
+}
+
+.form input:focus + .lbl-numero .text-num, .form input:valid + .lbl-numero .text-num
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-numero:after, .form input:valid + .lbl-numero:after
+{
+    transform: translateX(0%);
+}
